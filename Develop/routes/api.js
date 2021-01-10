@@ -27,7 +27,6 @@ router.put('/api/workouts/:id', ({ body, params }, res) => {
       });
   });
 
-//router.get()
 //function to create new exercises to a new workout plan
 router.post("/api/workouts", (req, res) => {
   console.log(req.body);
@@ -41,7 +40,6 @@ router.post("/api/workouts", (req, res) => {
   });
 });
 
-//router.get()
 //function to view the weight of all of the exercises on the stats page
 router.get("/api/workouts", (req, res) => {
   db.fitness.findAll({}, (error, data) => {
